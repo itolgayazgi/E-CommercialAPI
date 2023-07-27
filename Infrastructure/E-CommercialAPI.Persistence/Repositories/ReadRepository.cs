@@ -9,9 +9,9 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace E_CommercialAPI.Persistence.Concretes
+namespace E_CommercialAPI.Persistence.Repositories
 {
-    internal class ReadRepository<T> : IReadRepository<T> where T : BaseEntity
+    public class ReadRepository<T> : IReadRepository<T> where T : BaseEntity
     {
         readonly E_CommercialAPIDbContext _context;
 

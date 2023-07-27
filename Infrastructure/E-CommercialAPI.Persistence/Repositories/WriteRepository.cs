@@ -4,13 +4,13 @@ using E_CommercialAPI.Persistence.Contexts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 
-namespace E_CommercialAPI.Persistence.Concretes
+namespace E_CommercialAPI.Persistence.Repositories
 {
-    internal class WriteRepository<T> : IWriteRepository<T> where T : BaseEntity
+    public class WriteRepository<T> : IWriteRepository<T> where T : BaseEntity
     {
         readonly E_CommercialAPIDbContext _context;
 
-        public WriteRepository(E_CommercialAPIDbContext context)
+        public WriteRepository(E_CommercialAPIDbContext context) 
         {
             _context = context;
         }
